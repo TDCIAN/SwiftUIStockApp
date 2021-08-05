@@ -16,8 +16,7 @@ final class ImageLoader: ObservableObject {
     private var cache: ImageCache?
     private var cancellable: AnyCancellable?
     
-//    private static let imageProcessingQueue = DispatchQueue(label: "com.devtechie.imageProcessing")
-    private static let imageProcessingQueue = DispatchQueue(label: "com.my.home")
+    private static let imageProcessingQueue = DispatchQueue(label: "TDCIAN")
     
     
     init(url: URL, cache: ImageCache? = nil) {

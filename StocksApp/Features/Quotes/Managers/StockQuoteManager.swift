@@ -12,7 +12,7 @@ final class StockQuoteManager: QuoteManagerProtocol, ObservableObject {
     
     func download(stocks: [String], completion: @escaping (Result<[Quote], NetworkError>) -> Void) {
         var internalQuotes = [Quote]()
-        let downloadQueue = DispatchQueue(label: "com.devtechie.downloadQueue")
+        let downloadQueue = DispatchQueue(label: "TDCIAN")
         let downloadGroup = DispatchGroup()
         
         stocks.forEach { stock in
