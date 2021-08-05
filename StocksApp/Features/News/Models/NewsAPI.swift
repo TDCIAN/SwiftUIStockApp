@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// https://newsapi.org/
+struct NewsAPI {
+    static let key = "ed9fef4b468648a29d9a082b93582535"
+}

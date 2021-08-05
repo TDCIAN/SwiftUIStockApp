@@ -9,7 +9,23 @@ import SwiftUI
 
 struct NewsHeaderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("Top News")
+                .font(.title)
+                .foregroundColor(.white)
+            
+            HStack(spacing: 2) {
+                Text("From")
+                Image(systemName: "applelogo")
+                Text("NewsAPI")
+            }
+            .font(.title2)
+            .foregroundColor(.gray)
+            
+            RoundedRectangle(cornerRadius: 2)
+                .fill(Color.gray)
+                .frame(height: 1)
+        }
     }
 }
 
